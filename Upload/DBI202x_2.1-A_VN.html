@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 - Giới thiệu về cơ sở dữ liệu</title>
+</head>
+<body>
+    <h2>2. Các đặc điểm của Cơ sở dữ liệu</h2>
+    <h4>a. Mục tiêu video</h4>
+    <p>Video bài giảng này trình bày về vai trò và tầm quan trọng của cơ sở dữ liệu (database) trong các tổ chức:
+
+        Cơ sở dữ liệu cung cấp hỗ trợ quan trọng cho các hoạt động hàng ngày 
+        và ra quyết định trong các tổ chức. Dữ liệu mà các tổ chức thu thập được trong quá trình hoạt động
+        của mình (thông qua các trang web, hệ thống thương mại điện tử hay tính toán di động) là vô cùng lớn. Các dữ liệu đó là những  dữ liệu thô, cần chuyển đổi <u>(giải thích, kết hợp, định dạng)</u> để thành thông tin nhằm giúp tổ chức đưa ra các quyết định.
+        Ba đặc điểm vô cùng quan trọng của CSDL bao gồm: 
+       <ol>
+           <li>tính bền vững (persistency)</li>
+           <li> tính quan hệ (inter-related), </li>
+           <li> tính chia sẻ được (shared).</li>
+       </ol>
+          
+    <img src="Image\ERD.PNG" alt="ERD" width="500">
+    <h4>b. Database và DBMS</h4>
+    <p>Cơ sở dữ liệu (database) cung cấp hỗ trợ quan trọng cho các hoạt động hàng ngày và ra quyết định trong tổ chức. Các hoạt động hàng ngày như nhận đơn đặt hàng, đặt chỗ và trả lương cho nhân viên. Các nhiệm vụ ra quyết định chẳng hạn như giải quyết khiếu nại của khách hàng, lựa chọn nhà cung cấp và quyết định về vị trí của một cửa hàng mới.
+    </p>
+    <img src="Image/database-DBMS.PNG" alt="DBMS" width="200">
+    <p>Hệ thống quản trị cơ sở dữ liệu hoặc DBMS (Database Management System) là công cụ cho phép tạo và sử dụng cơ sở dữ liệu trong các tổ chức. Công nghệ quản lý cơ sở dữ liệu là một nhánh của ngành công nghiệp phần mềm với sự phát triển mang tính cách mạng trong hơn 40 năm. Công nghệ quản trị cơ sở dữ liệu cung cấp nền tảng để quản lý trí nhớ dài hạn của tổ chức. Trí nhớ về khách hàng, nhân viên, đơn đặt hàng, sản phẩm và các thực thể quan trọng khác.</p>
+    
+    <h4>c. Các khái niệm quan trọng</h4>
+    <p>Hầu hết các tổ chức có rất nhiều dữ liệu, thậm chí quá nhiều dữ liệu cần xử lý trong quá trình hoạt động. Sự gia tăng của các trang web, thương mại điện tử và điện toán di động đã nhân lên rất nhiều lượng dữ liệu mà một tổ chức phải quản lý. <br>Dữ liệu (data) là các dữ kiện thô. <br>Chúng chia thành hai loại: Dữ liệu thô (raw data). Dữ liệu đa phương tiện (media). Dữ liệu thô là các dữ kiện thông thường như tên người hay vật, địa chỉ, ngày tháng năm sinh, lãi suất, số tiền bán hàng, v.v. <br>Dữ kiện thô thông thường liên quan đến các con số và văn bản gặp phải trong hoạt động hàng ngày. Dữ liệu đa phương tiện tách biệt với các dữ kiện thông thường do những tiến bộ trong hoạt động thu nhận và xử lý kỹ thuật số chẳng hạn như hình ảnh được quay hay chụp trên điện thoại di động, bản đồ, bản vẽ kỹ thuật, video sản phẩm, dấu vân tay và các trang web bây giờ cũng được coi là dữ liệu. Công nghệ quản trị cơ sở dữ liệu quản lý cả dữ liệu thô và dữ liệu đa phương tiện. Còn khoá học này sẽ tập trung vào các phép chuyển đổi (transformation) dữ liệu thành thông tin để ra quyết định. Dữ kiện thô cần được lý giải (interpretation), kết hợp (combination), định dạng (formatting),… được sử dụng cho việc ra quyết định. Sự chuyển đổi từ dữ liệu thành thông tin có thể rất đơn giản như định dạng một chữ số gắn thêm các ký hiệu tiền tệ và dấu phẩy.</p>
+
+
+
+    <h4>d. Các đặt điểm quan trọng của database</h4>
+    <p>Có ba đặc điểm quan trọng đối với database:</p>
+    <ul>
+        <ul>
+        <li>Tính bền vững (persistency)</li>
+        <li>Tính quan hệ (inter-related)</li>
+        <li>Tính chia sẻ được (shared)</li>
+        </ul>
+        </ul>
+        <p>Đặc điểm chính đầu tiên là <span style="text-decoration: underline;">tính bền vững</span>. Biểu thị bằng hình ảnh các thiết bị lưu trữ dữ liệu như đĩa từ hay ổ đĩa flash. Tính bền vững này có nghĩa là dữ liệu tồn tại lâu hơn so với trạng thái của bộ nhớ máy tính khi máy tính tắt. Các tổ chức cần trí nhớ lâu dài và đáng tin cậy để hoạt động thành công.</p>
+        <p>Đặc điểm chính thứ hai là <span style="text-decoration: underline;">tính quan hệ</span> giữa các dữ liệu với nhau. Doanh nghiệp phải lưu trữ dữ liệu về khách hàng, nhân viên, sản phẩm, đơn đặt hàng, khóa học, lô hàng và các thực thể quan trọng khác. Nhưng các doanh nghiệp cũng phải lưu trữ mối quan hệ giữa các thực thể chẳng hạn như đơn đặt hàng nào đã được khách hàng đặt, những sản phẩm nào đã được vận chuyển, và những gì sinh viên đã đăng ký trong một khóa học.</p>
+        <p>Đặc điểm chính thứ ba là cơ sở dữ liệu có thể <span style="text-decoration: underline;">chia sẻ</span><span style="text-decoration: underline;"> được</span> với nhiều ứng dụng bằng cách sử dụng cơ sở dữ liệu, và nhiều người dùng có thể đồng thời tương tác với cơ sở dữ liệu. Ví dụ, nhiều khách hàng có thể đồng thời đặt vé máy bay, đặt mua sản phẩm và ứng tuyển một vị trí.</p>
+
+    <h4>e. Ví dụ ứng dụng sử dụng database</h4>
+    Cơ sở dữ liệu có thể hỗ trợ nhiều ứng dụng chẳng hạn như ứng dụng đặt hàng, giao vận, kế toán và dịch vụ khách hàng.
+    Hãy thử nhìn một ví dụ ứng dụng sử dụng database có cả ba đặc điểm trên: một cơ sở dữ liệu để hỗ trợ các hoạt động và ra quyết định trong trường đại học. 
+    Nếu bạn đã tham gia các khóa học đại học, chắc hẳn bạn đã tương tác với cơ sở dữ liệu trường đại học. Nếu không, chắc hẳn bạn đã từng đăng ký học phổ thông rồi và bạn đã tương tác với một cơ sở dữ liệu tương tự.
+    Các thực thể (entity) cần ghi nhớ trong cơ sở dữ liệu này là sinh viên, giảng viên, khóa học, dịch vụ của các khóa học và ghi danh.
+    Dù vậy thông tin riêng của từng thực thể này là chưa đủ. Mối quan hệ (relationship) giữa các thực thể này cũng rất quan trọng cần ghi nhớ theo thời gian. Khoa giảng dạy khóa học, sinh viên đăng ký các khóa học, lịch trình cung cấp các khóa học là một số các mối quan hệ quan trọng phải được ghi nhớ theo thời gian.</p>
+
+    <img src="Image\lesson1_university.png" alt="database" width="300">
+    <h2>3. Tổng quan về DBMS và định nghĩa cơ sở dữ liệu</h2>
+    <h4>a. Mục tiêu video</h4>
+    <p>Video bài giảng này trình bày về khái niệm hệ quản trị CSDL (DBMS - Database management system), các loại hệ quản trị CSDL (HQT CSDL). HQT CSDL là một công cụ giúp tạo, sử dụng và bảo trì CSDL. Một số HQT CSDL chạy trên máy chủ được cung cấp bởi các công ty lớn như Oracle, IBM, Microsoft, SAP, Teradata. Ngoài ra, còn có các HQT CSDL nguồn mở như MySQL. Bên cạnh đó, còn có các HQT CSDL nhúng, chạy trên các nền máy tính cá nhân và di động. Ngôn ngữ SQL (ngôn ngữ truy vấn có cấu trúc) là một ngôn ngữ lập trình dùng để giao tiếp với các CSDL.</p>
+    <h4>b. Phần mềm DBMS</h4>
+    <p>Hệ thống hay phần mềm DBMS là tập hợp các thành phần hỗ trợ việc tạo, sử dụng và bảo trì cơ sở dữ liệu. Ban đầu, DBMS được dùng để cung cấp khả năng lưu trữ và truy xuất dữ liệu hiệu quả. Do nhu cầu thị trường và sự đổi mới phần mềm, DBMS đã phát triển để cung cấp một loạt các tính năng cho việc thu thập dữ liệu, lưu trữ, phổ biến, bảo trì, truy xuất và định dạng. Sự phát triển của các tính năng này đã làm cho các DBMS trở nên khá phức tạp. Có thể mất nhiều năm nghiên cứu và sử dụng để thành thạo một DBMS cụ thể. Ngoài ra DBMS liên tục phát triển, nên bạn cũng cần liên tục cập nhật kiến thức của mình.</p>
+    <h4>c. Các loại phần mềm DBMS</h4>
+    <p>Các enterprise DBMS chủ yếu chạy trên các server (máy chủ) chạy UNIX, hệ điều hành MVS của IBM hay hệ điều hành Microsoft Windows Server. Phiên bản enterprise hỗ trợ cho các tổ chức có cơ sở dữ liệu lớn với hàng ngàn người sử dụng đồng thời và đòi hỏi độ tin cậy và các yêu cầu về hiệu suất mạnh mẽ. Oracle được coi là nhà cung cấp phần mềm cơ sở dữ liệu doanh nghiệp hàng đầu với sự cạnh tranh mạnh mẽ, từ IBM, Microsoft, SAP, Teradata và các phần mềm nguồn mở như MySQL. Các phiên bản desktop DBMS hỗ trợ nhóm làm việc nhỏ với cơ sở dữ liệu nhỏ hơn, hàng chục người sử dụng đồng thời với độ tin cậy và các yêu cầu về hiệu suất khiêm tốn. Còn thị trường phần mềm DBMS máy tính cá nhân, Microsoft Access chiếm ưu thế, ít nhất một phần nhờ sự thống trị của Microsoft Office.</p>
+    <h4>d. Biểu đồ ERD</h4>
+    <p>Một biểu đồ biểu thị logic các loại thực thể và các mối quan hệ giữa chúng có tên gọi ERD. Biểu đồ này có thể hiểu đơn giản là bản thiết kế của database, giúp cho việc triển khai database lên một hệ DBMS cụ thể dễ dàng hơn.
+    <br> Ví dụ:</br>
+    <img src="Image/lesson1_erd.png" alt="" width="500">
+    <br>Một số DBMS cung cấp sẵn công cụ trực quan để tạo biểu đồ ERD, cũng như khả năng sinh ra database từ ERD. Các thực thể được thể hiện trên ERD sẽ trở thành các bảng (table) tương ứng trên database.</p>
+    <h4>e. Ngôn ngữ SQL</h4>
+    <p>Ngôn ngữ truy vấn cấu trúc (structured query language) có tên gọi là SQL cung cấp câu lệnh thao tác với bảngvà các mối quan hệ giữa chúngbằng ngôn ngữ máy tính cấu trúc.</p>
+    <p>Ví dụ: </p>
+     <img src="Image/lesson1_sql.png" alt="" width="200">
+    <p>SQL cung cấp một tiêu chuẩn lỏng (loose standard) cho toàn bộ ngành công nghiệp phần mềm cơ sở dữ liệu. Về cơ bản, ngôn ngữ SQL ở các hệ DBMS là giống nhau, nhưng có thêm những cú pháp hay đặc điểm riêng. DBMS thường cung cấp các công cụ trực quan để giúp tạo ra các câu lệnh SQL nhanh và thuận tiện hơn. Những công cụ này, mặc dù không đồng nhất trong ngành phần mềm cơ sở dữ liệu nhưng nó giúp việc sử dụng dễ dàng hơn n</p>
+    
+    <h2>4. Tổng kết bài học</h2>
+    <p>Tổng kết bài học
+
+        Sau đây là một số điểm quan trọng trong bài học bạn đã nắm được:
+        
+        Cơ sở dữ liệu (database) được các phần mềm sử dụng để lưu trữ dữ liệu có cấu trúc và thường ở qui mô vừa đến lớn, xử lý các truy vấn dữ liệu theo yêu cầu nghiệp vụ
+        Cơ sở dữ liệu có tính bền vững (persistence) tức là có thể được lưu trữ lâu dài trên các thiết bị lưu trữ
+        Cơ sở dữ liệu có tính quan hệ (inter-related) tức là có thể biểu diễn mối quan hệ giữa các cấu trúc (hay thực thể) dữ liệu liên quan
+        Cơ sở dữ liệu có tính chia sẻ (shared) tức là có thể cho phép nhiều người cùng xử lý từng phần hay toàn bộ dữ liệu
+        Cơ sở dữ liệu lưu giữ các thực thể (entity) và các mối quan hệ (relationship) giữa chúng. Một CSDL phức tạp có thể có hàng trăm thực thể và mối quan hệ.
+        Hệ quản trị cơ sở dữ liệu (DBMS) là phần mềm quản lý, vận hành các cơ sở dữ liệu. Có một số hệ phổ biến như Oracle, SQL Server, MySQL, Postgres...
+        Có nhiều loại DBMS tương ứng với đối tượng sử dụng cũng như qui mô sử dụng như Enterprise DBMS, Desktop DBMS, Embedded DBMS
+        Biểu đồ ERD giống như bản thiết kế của cơ sở dữ liệu
+        Ngôn ngữ SQL được sử dụng để cài đặt (hay định nghĩa) các thực thể và truy vấn dữ liệu trong cơ sở dữ liệu
+        Các hệ thống DBMS thường hỗ trợ ngôn ngữ SQL tiêu chuẩn, tuy nhiên cũng có thể đưa ra những biến thể ngôn ngữ SQL của riêng mình, chẳng hạn SQL Server cung cấp ngôn ngữ T-SQL</p>
+
+</body>
+</html>
